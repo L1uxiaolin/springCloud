@@ -1,11 +1,15 @@
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_center?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: aimeng
   application:
-    #注册中心服务名
     name: user-center
-#端口号
 server:
   port: 901
 eureka:
   client:
     serviceUrl:
+      #鏈嶅姟娉ㄥ唽鍦板潃
       defaultZone: http://127.0.0.1:801/eureka/

@@ -1,15 +1,14 @@
 spring:
   application:
-    #注册中心服务名
     name: service-center
-#端口号
 server:
   port: 801
 eureka:
   client:
-    #禁止向服务中心注册
+    #鍏抽棴娉ㄥ唽
     registerWithEureka: false
-    #禁止拉取服务列表
+    #绂佹鎷夊彇鏈嶅姟鍒楄〃
     fetchRegistry: false
     serviceUrl:
+      #鏈嶅姟涓績娉ㄥ唽鍦板潃
       defaultZone: http://127.0.0.1:801/eureka/
