@@ -1,0 +1,11 @@
+spring:
+  application:
+    #注册中心服务名
+    name: user-center
+#端口号
+server:
+  port: 901
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:801/eureka/

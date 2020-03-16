@@ -1,0 +1,15 @@
+spring:
+  application:
+    #注册中心服务名
+    name: service-center
+#端口号
+server:
+  port: 801
+eureka:
+  client:
+    #禁止向服务中心注册
+    registerWithEureka: false
+    #禁止拉取服务列表
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:801/eureka/
