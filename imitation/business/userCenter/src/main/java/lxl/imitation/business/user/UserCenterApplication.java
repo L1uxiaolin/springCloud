@@ -21,12 +21,4 @@ public class UserCenterApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserCenterApplication.class, args);
     }
-
-    @Autowired
-    private UserService userService;
-
-    @RequestMapping("/testMybatis")
-    public List<User> testMybatis(){
-        return userService.list();
-    }
 }

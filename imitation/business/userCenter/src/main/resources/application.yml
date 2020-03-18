@@ -1,4 +1,17 @@
 spring:
+  thymeleaf:
+    #模板的模式，支持 HTML, XML TEXT JAVASCRIPT
+    mode: HTML5
+    #编码 可不用配置
+    encoding: UTF-8
+    suffix: .html
+    #开发配置为false,避免修改模板还要重启服务器
+    cache: false
+    #配置模板路径，默认是templates，可以不用配置
+    prefix: classpath:/templates
+    #内容类别,可不用配置
+    servlet:
+      content-type: text/html
   datasource:
     url: jdbc:mysql://localhost:3306/user_center?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
     driverClassName: com.mysql.cj.jdbc.Driver
