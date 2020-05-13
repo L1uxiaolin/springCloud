@@ -9,6 +9,7 @@ import lombok.Data;
 @Data
 @TableName("user")
 public class User extends SuperEntity{
-    private String userName;
-    private String userPhone;
+    private String userNickname;
+    private byte userSex;
+    private long userHeadPortraitId;
 }
